@@ -1,0 +1,3 @@
+	//print screen do pliku
+	//printScreenSaveToFile(hwnd, counter);
+

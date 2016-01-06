@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+*.tlog
+*.log
+Automizer/Automizer.v12.suo
+*.pdb
+*.ipch
