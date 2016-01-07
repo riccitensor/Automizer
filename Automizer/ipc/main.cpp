@@ -1,13 +1,15 @@
 #include "stdafx.h"
 
+
 #include "ocr.h"
+//glowna petla
 #include "MainEnumWindow.h"
+//do zczytywania dla Slawka
 #include "DataCollector.h"
 
-//#include "algo_funkcje.h"
 
 #include "Winner.h"
-#include "Randomizer.h"
+#include "Ranges.h"
 #include "Place.h"
 #include "Hand.h"
 
@@ -70,6 +72,10 @@ int main(char ** argv, int argc){
 	ilInit();
 	printf("DevIL has been initialized\n");
 
+	//wczytywanie zakresow
+	readRanges();
+	
+
 	/*
 	* Glowna petla progrmu
 	*/
@@ -86,8 +92,7 @@ int main(char ** argv, int argc){
 	Sleep(5000);
 	}*/
 
-	//wczytywanie zakresow
-	readRanges();
+
 
 
 
@@ -241,13 +246,8 @@ int main(char ** argv, int argc){
 		//cout << endl;
 
 
-
-
 		//board
 		vector<int> b = hand->getBoard();
-
-
-
 
 		//rece
 		///////////////--------moja reka z dodanym boardem
@@ -305,10 +305,6 @@ int main(char ** argv, int argc){
 
 		whoWon[ww]++;
 
-	
-
-
-
 
 		//czyscimy USED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		used.clear();
@@ -321,9 +317,6 @@ int main(char ** argv, int argc){
 		h5.clear();
 
 		myHand.clear();
-
-
-
 
 
 	}//---------------------------------------------------koniec MC
@@ -339,10 +332,6 @@ int main(char ** argv, int argc){
 	for (int i = 0; i < 6; i++){
 		cout << i << "has " << ((double)whoWon[i] / sum * 100) << "%" << endl;
 	}
-
-
-
-
 
 
 

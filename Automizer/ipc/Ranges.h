@@ -16,6 +16,7 @@ using namespace std;
 std::vector <std::vector<std::string> >	 ranges;
 std::map <int, int> int_ranges;
 
+
 vector <int> range6;
 vector <int> range9;
 vector <int> range12;
@@ -42,9 +43,10 @@ vector <int> range74;
 vector <int> range100;
 
 
-
-
-
+/*
+Zczytujemy zakresy.
+GRACZ NIEAKTYWNY RANGE 0, NIE LOSUJEMY KART
+*/
 void readRanges()
 {
 	algo_funkcje *a;
@@ -86,14 +88,6 @@ void readRanges()
 	range74 = a->handsForRange(int_ranges, 74);
 	range100 = a->handsForRange(int_ranges, 100);
 
-
-
-
-
-	/*
-	GRACZ NIEAKTYWNY RANGE 0, NIE LOSUJEMY KART
-	*/
-
 }
 vector<int> randomHandFromRange(vector<int> range){
 
@@ -105,8 +99,6 @@ vector<int> randomHandFromRange(vector<int> range){
 
 	sec = sec - 10;
 	fir = fir - 10;
-
-
 
 	//std::cout << "KARTA: " << fir << "," << sec << endl;
 

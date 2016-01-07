@@ -38,14 +38,6 @@ double Hand::getM(int pos){
 
 
 
-vector< pair<double, double> > MTABLE = {
-	{ 0, 7 },
-	{ 7.1, 50 }
-};
-
-
-
-
 int Hand::whoStartsPre(){
 	if (this->places[5].posBB == 1)
 		return 0;

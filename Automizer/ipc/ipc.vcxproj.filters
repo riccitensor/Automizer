@@ -63,13 +63,16 @@
     <ClInclude Include="Place.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Randomizer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Winner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="WinnerFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ranges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainEnumWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
